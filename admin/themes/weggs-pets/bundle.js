@@ -1,5 +1,5 @@
-import { jsx as e, jsxs as a, Fragment as u } from "react/jsx-runtime";
-import { i18n as k, pickPublicLocale as S, canonicalUrl as T, pickFormat as f, postSortMillis as C, buildTermUrl as E, toast as z } from "@agent-cms/runtime";
+import { jsx as e, jsxs as a, Fragment as f } from "react/jsx-runtime";
+import { i18n as k, pickPublicLocale as S, canonicalUrl as T, pickFormat as b, postSortMillis as C, buildTermUrl as E, toast as z } from "@agent-cms/runtime";
 import { useState as y, useEffect as L } from "react";
 import { useTranslation as I } from "react-i18next";
 const N = `@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
@@ -72,8 +72,14 @@ body.weggs-pets {
 
 /* MAIN */
 .weggs-pets-main { min-height: 60vh; }
-.weggs-pets-section { padding: 3rem 0; }
-.weggs-pets-section-title { font-size: 1.375rem; font-weight: 700; margin-bottom: 2rem; color: var(--wp-navy); letter-spacing: -.01em; }
+.weggs-pets-section { padding: 3rem 0; border-top: 2px solid var(--wp-border); }
+.weggs-pets-section:first-of-type { border-top: none; }
+.weggs-pets-section-header { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+.weggs-pets-section-title { font-size: 1.5rem; font-weight: 800; color: var(--wp-navy); letter-spacing: -.02em; margin-bottom: 0; }
+.weggs-pets-section-title a { color: inherit; text-decoration: none; }
+.weggs-pets-section-title a:hover { color: var(--wp-blue); }
+.weggs-pets-section-more { color: var(--wp-blue); font-size: .9rem; font-weight: 600; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+.weggs-pets-section-more:hover { text-decoration: underline; }
 
 /* CARDS GRID */
 .weggs-pets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.75rem; }
@@ -249,16 +255,16 @@ npm run serve     # serve the demo site on http://localhost:4321/
 
 Bump \`version\` in \`manifest.json\`, \`src/manifest.tsx\` and \`package.json\` for each release: installing a newer ZIP upgrades the theme in place.
 `;
-function m(t, r) {
+function h(t, r) {
   const n = k.getFixedT(S(r || t.settings.language || "en"), "theme-weggs-pets");
   return (s) => n(`public.${s}`);
 }
-function b({ items: t, currentPath: r }) {
+function v({ items: t, currentPath: r }) {
   return /* @__PURE__ */ e("ul", { children: t.map((n) => {
     const s = r !== void 0 && n.href === `/${r}`;
     return /* @__PURE__ */ a("li", { children: [
       /* @__PURE__ */ e("a", { href: n.href, "aria-current": s ? "page" : void 0, children: n.label }),
-      n.children && n.children.length > 0 && /* @__PURE__ */ e(b, { items: n.children, currentPath: r })
+      n.children && n.children.length > 0 && /* @__PURE__ */ e(v, { items: n.children, currentPath: r })
     ] }, n.id);
   }) });
 }
@@ -295,7 +301,7 @@ function F() {
 }
 function U({ site: t, currentPath: r, locale: n }) {
   var i;
-  const s = m(t, n), l = ((i = t.settings.enabledPlugins) == null ? void 0 : i["agentcms-search"]) !== !1;
+  const s = h(t, n), l = ((i = t.settings.enabledPlugins) == null ? void 0 : i["agentcms-search"]) !== !1;
   return /* @__PURE__ */ e("header", { className: "weggs-pets-header", children: /* @__PURE__ */ a("div", { className: "weggs-pets-container weggs-pets-header__inner", children: [
     /* @__PURE__ */ a("a", { className: "weggs-pets-brand", href: t.homePath ?? "/index.html", children: [
       /* @__PURE__ */ e(F, {}),
@@ -305,7 +311,7 @@ function U({ site: t, currentPath: r, locale: n }) {
       /* @__PURE__ */ e("span", { className: "weggs-pets-sr-only", children: s("menu") }),
       /* @__PURE__ */ e("span", { "aria-hidden": "true", children: "☰" })
     ] }),
-    /* @__PURE__ */ e("nav", { id: "weggs-pets-nav", className: "weggs-pets-nav", "aria-label": s("mainNav"), "data-cms-menu": "header", children: /* @__PURE__ */ e(b, { items: t.resolvedMenus.header, currentPath: r }) }),
+    /* @__PURE__ */ e("nav", { id: "weggs-pets-nav", className: "weggs-pets-nav", "aria-label": s("mainNav"), "data-cms-menu": "header", children: /* @__PURE__ */ e(v, { items: t.resolvedMenus.header, currentPath: r }) }),
     l && /* @__PURE__ */ e("div", { className: "weggs-pets-header__actions", children: /* @__PURE__ */ a("button", { type: "button", className: "weggs-pets-search-btn", "data-cms-search": !0, "aria-label": "Rechercher", children: [
       /* @__PURE__ */ a("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2.5", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", children: [
         /* @__PURE__ */ e("circle", { cx: "11", cy: "11", r: "8" }),
@@ -317,9 +323,9 @@ function U({ site: t, currentPath: r, locale: n }) {
   ] }) });
 }
 function R({ site: t, locale: r }) {
-  const n = m(t, r);
+  const n = h(t, r);
   return /* @__PURE__ */ e("footer", { className: "weggs-pets-footer", children: /* @__PURE__ */ a("div", { className: "weggs-pets-container weggs-pets-footer__inner", children: [
-    /* @__PURE__ */ e("nav", { "aria-label": n("footerNav"), "data-cms-menu": "footer", children: /* @__PURE__ */ e(b, { items: t.resolvedMenus.footer }) }),
+    /* @__PURE__ */ e("nav", { "aria-label": n("footerNav"), "data-cms-menu": "footer", children: /* @__PURE__ */ e(v, { items: t.resolvedMenus.footer }) }),
     /* @__PURE__ */ a("p", { className: "weggs-pets-muted", children: [
       "© ",
       (/* @__PURE__ */ new Date()).getFullYear(),
@@ -329,8 +335,8 @@ function R({ site: t, locale: r }) {
     /* @__PURE__ */ e("div", { "data-cms-langswitch": "footer" })
   ] }) });
 }
-function P({ site: t, pageTitle: r, pageDescription: n, ogImage: s, currentPath: l, currentLocale: i, children: p }) {
-  const g = i || t.settings.language || "en", c = t.settings.title || "", o = r ? r.includes(c) ? r : `${r} — ${c}` : c, d = t.settings.baseUrl && l ? T(t.settings.baseUrl, l) : void 0;
+function P({ site: t, pageTitle: r, pageDescription: n, ogImage: s, currentPath: l, currentLocale: i, children: m }) {
+  const g = i || t.settings.language || "en", p = t.settings.title || "", o = r ? r.includes(p) ? r : `${r} — ${p}` : p, d = t.settings.baseUrl && l ? T(t.settings.baseUrl, l) : void 0;
   return /* @__PURE__ */ a("html", { lang: g, children: [
     /* @__PURE__ */ a("head", { children: [
       /* @__PURE__ */ e("meta", { charSet: "utf-8" }),
@@ -348,7 +354,7 @@ function P({ site: t, pageTitle: r, pageDescription: n, ogImage: s, currentPath:
     ] }),
     /* @__PURE__ */ a("body", { className: "weggs-pets", children: [
       /* @__PURE__ */ e(U, { site: t, currentPath: l, locale: g }),
-      /* @__PURE__ */ e("main", { className: "weggs-pets-main", children: p }),
+      /* @__PURE__ */ e("main", { className: "weggs-pets-main", children: m }),
       /* @__PURE__ */ e(R, { site: t, locale: g }),
       /* @__PURE__ */ e("script", { type: "application/x-cms-body-end" })
     ] })
@@ -356,7 +362,7 @@ function P({ site: t, pageTitle: r, pageDescription: n, ogImage: s, currentPath:
 }
 function j({ post: t }) {
   var n;
-  const r = f(t.hero, "small");
+  const r = b(t.hero, "small");
   return /* @__PURE__ */ a("article", { className: "weggs-pets-card", children: [
     r && /* @__PURE__ */ e("a", { href: `/${t.url}`, className: "weggs-pets-card__media", tabIndex: -1, "aria-hidden": "true", children: /* @__PURE__ */ e("img", { src: r, alt: ((n = t.hero) == null ? void 0 : n.alt) ?? "", loading: "lazy" }) }),
     /* @__PURE__ */ a("div", { className: "weggs-pets-card__body", children: [
@@ -367,38 +373,58 @@ function j({ post: t }) {
     ] })
   ] });
 }
-function v({ posts: t, site: r }) {
-  return t.length === 0 ? /* @__PURE__ */ e("p", { className: "weggs-pets-muted", children: m(r)("empty") }) : /* @__PURE__ */ e("div", { className: "weggs-pets-grid", children: t.map((n) => /* @__PURE__ */ e(j, { post: n }, n.id)) });
+function u({ posts: t, site: r }) {
+  return t.length === 0 ? /* @__PURE__ */ e("p", { className: "weggs-pets-muted", children: h(r)("empty") }) : /* @__PURE__ */ e("div", { className: "weggs-pets-grid", children: t.map((n) => /* @__PURE__ */ e(j, { post: n }, n.id)) });
 }
-function B({ site: t, posts: r, staticPage: n, archivesLink: s }) {
-  const l = m(t), i = t.themeConfig, p = (i == null ? void 0 : i.heroImageUrl) ?? "", g = (i == null ? void 0 : i.heroTitle) || t.settings.title, c = (i == null ? void 0 : i.heroSubtitle) || t.settings.description;
-  return n ? /* @__PURE__ */ e("div", { className: "weggs-pets-container weggs-pets-prose", dangerouslySetInnerHTML: { __html: n.bodyHtml } }) : /* @__PURE__ */ a(u, { children: [
-    p ? /* @__PURE__ */ a("div", { className: "weggs-pets-hero-banner", children: [
-      /* @__PURE__ */ e("img", { className: "weggs-pets-hero-banner__img", src: p, alt: "" }),
+function B(t) {
+  const r = /* @__PURE__ */ new Map(), n = [];
+  for (const l of t)
+    if (l.category) {
+      const i = l.category.url;
+      r.has(i) || r.set(i, { name: l.category.name, url: l.category.url, posts: [] }), r.get(i).posts.push(l);
+    } else
+      n.push(l);
+  const s = Array.from(r.values());
+  return n.length && s.push({ name: "", url: "", posts: n }), s;
+}
+function M({ site: t, posts: r, staticPage: n, archivesLink: s }) {
+  const l = h(t), i = t.themeConfig, m = (i == null ? void 0 : i.heroImageUrl) ?? "", g = (i == null ? void 0 : i.heroTitle) || t.settings.title, p = (i == null ? void 0 : i.heroSubtitle) || t.settings.description;
+  if (n)
+    return /* @__PURE__ */ e("div", { className: "weggs-pets-container weggs-pets-prose", dangerouslySetInnerHTML: { __html: n.bodyHtml } });
+  const o = B(r), d = o.length > 1 || o.length === 1 && o[0].name;
+  return /* @__PURE__ */ a(f, { children: [
+    m ? /* @__PURE__ */ a("div", { className: "weggs-pets-hero-banner", children: [
+      /* @__PURE__ */ e("img", { className: "weggs-pets-hero-banner__img", src: m, alt: "" }),
       /* @__PURE__ */ e("div", { className: "weggs-pets-hero-banner__overlay" }),
       /* @__PURE__ */ a("div", { className: "weggs-pets-hero-banner__content weggs-pets-container", children: [
         /* @__PURE__ */ e("div", { className: "weggs-pets-hero-banner__tag", children: "🐾 Chiens & Chats" }),
         /* @__PURE__ */ e("h1", { className: "weggs-pets-hero-banner__title", children: g }),
-        c && /* @__PURE__ */ e("p", { className: "weggs-pets-hero-banner__subtitle", children: c })
+        p && /* @__PURE__ */ e("p", { className: "weggs-pets-hero-banner__subtitle", children: p })
       ] })
     ] }) : /* @__PURE__ */ e("div", { className: "weggs-pets-hero", children: /* @__PURE__ */ a("div", { className: "weggs-pets-container", children: [
       /* @__PURE__ */ e("h1", { children: g }),
-      c && /* @__PURE__ */ e("p", { className: "weggs-pets-lead", children: c })
+      p && /* @__PURE__ */ e("p", { className: "weggs-pets-lead", children: p })
     ] }) }),
-    /* @__PURE__ */ a("div", { className: "weggs-pets-container weggs-pets-section", children: [
+    d ? o.map((c) => /* @__PURE__ */ e("div", { className: "weggs-pets-section", children: /* @__PURE__ */ a("div", { className: "weggs-pets-container", children: [
+      c.name && /* @__PURE__ */ a("div", { className: "weggs-pets-section-header", children: [
+        /* @__PURE__ */ e("h2", { className: "weggs-pets-section-title", children: c.url ? /* @__PURE__ */ e("a", { href: c.url, children: c.name }) : c.name }),
+        c.url && /* @__PURE__ */ e("a", { className: "weggs-pets-section-more", href: c.url, children: "Voir tout →" })
+      ] }),
+      /* @__PURE__ */ e(u, { posts: c.posts, site: t })
+    ] }) }, c.url || "other")) : /* @__PURE__ */ a("div", { className: "weggs-pets-container weggs-pets-section", children: [
       /* @__PURE__ */ e("h2", { className: "weggs-pets-section-title", children: l("latestPosts") }),
-      /* @__PURE__ */ e(v, { posts: r, site: t }),
-      s && /* @__PURE__ */ e("p", { className: "weggs-pets-more", children: /* @__PURE__ */ e("a", { href: s.href, children: s.label }) })
-    ] })
+      /* @__PURE__ */ e(u, { posts: r, site: t })
+    ] }),
+    s && /* @__PURE__ */ e("div", { className: "weggs-pets-container", children: /* @__PURE__ */ e("p", { className: "weggs-pets-more", children: /* @__PURE__ */ e("a", { href: s.href, children: s.label }) }) })
   ] });
 }
-function M({ site: t, post: r, bodyHtml: n, author: s, hero: l, primaryTerm: i, tags: p }) {
-  const g = m(t), c = f(l, "large"), o = r.type === "post", d = new Date(C(r));
-  let h = "";
+function $({ site: t, post: r, bodyHtml: n, author: s, hero: l, primaryTerm: i, tags: m }) {
+  const g = h(t), p = b(l, "large"), o = r.type === "post", d = new Date(C(r));
+  let c = "";
   try {
-    h = new Intl.DateTimeFormat(t.settings.language || "en", { dateStyle: "long" }).format(d);
+    c = new Intl.DateTimeFormat(t.settings.language || "en", { dateStyle: "long" }).format(d);
   } catch {
-    h = d.toDateString();
+    c = d.toDateString();
   }
   return /* @__PURE__ */ a("article", { className: "weggs-pets-single", children: [
     /* @__PURE__ */ a("header", { children: [
@@ -410,13 +436,13 @@ function M({ site: t, post: r, bodyHtml: n, author: s, hero: l, primaryTerm: i, 
           " ",
           s.url ? /* @__PURE__ */ e("a", { href: s.url, children: s.displayName }) : s.displayName
         ] }),
-        /* @__PURE__ */ e("time", { dateTime: d.toISOString(), children: h })
+        /* @__PURE__ */ e("time", { dateTime: d.toISOString(), children: c })
       ] }),
       r.excerpt && /* @__PURE__ */ e("p", { className: "weggs-pets-single__excerpt", children: r.excerpt })
     ] }),
-    c && /* @__PURE__ */ e("div", { className: "weggs-pets-single__hero", children: /* @__PURE__ */ e("img", { src: c, alt: (l == null ? void 0 : l.alt) ?? "" }) }),
+    p && /* @__PURE__ */ e("div", { className: "weggs-pets-single__hero", children: /* @__PURE__ */ e("img", { src: p, alt: (l == null ? void 0 : l.alt) ?? "" }) }),
     /* @__PURE__ */ e("div", { className: "weggs-pets-prose", dangerouslySetInnerHTML: { __html: n } }),
-    o && p.length > 0 && /* @__PURE__ */ e("ul", { className: "weggs-pets-tags", "aria-label": g("tags"), children: p.map((x) => /* @__PURE__ */ e("li", { children: /* @__PURE__ */ a("span", { className: "weggs-pets-tag", children: [
+    o && m.length > 0 && /* @__PURE__ */ e("ul", { className: "weggs-pets-tags", "aria-label": g("tags"), children: m.map((x) => /* @__PURE__ */ e("li", { children: /* @__PURE__ */ a("span", { className: "weggs-pets-tag", children: [
       "#",
       x.name
     ] }) }, x.id)) }),
@@ -426,21 +452,21 @@ function M({ site: t, post: r, bodyHtml: n, author: s, hero: l, primaryTerm: i, 
     ] }) })
   ] });
 }
-function $({ site: t, term: r, posts: n, archivesLink: s }) {
-  return /* @__PURE__ */ a(u, { children: [
+function D({ site: t, term: r, posts: n, archivesLink: s }) {
+  return /* @__PURE__ */ a(f, { children: [
     /* @__PURE__ */ e("div", { className: "weggs-pets-archive-header", children: /* @__PURE__ */ a("div", { className: "weggs-pets-container", children: [
       /* @__PURE__ */ e("h1", { children: r.name }),
       r.description && /* @__PURE__ */ e("p", { children: r.description })
     ] }) }),
     /* @__PURE__ */ a("div", { className: "weggs-pets-container weggs-pets-section", children: [
-      /* @__PURE__ */ e(v, { posts: n, site: t }),
+      /* @__PURE__ */ e(u, { posts: n, site: t }),
       s && /* @__PURE__ */ e("p", { className: "weggs-pets-more", children: /* @__PURE__ */ e("a", { href: s.href, children: s.label }) })
     ] })
   ] });
 }
-function D({ site: t, author: r, posts: n }) {
-  const s = f(r.avatar, "small"), l = r.displayName.split(" ").map((i) => i[0]).join("").slice(0, 2).toUpperCase();
-  return /* @__PURE__ */ a(u, { children: [
+function O({ site: t, author: r, posts: n }) {
+  const s = b(r.avatar, "small"), l = r.displayName.split(" ").map((i) => i[0]).join("").slice(0, 2).toUpperCase();
+  return /* @__PURE__ */ a(f, { children: [
     /* @__PURE__ */ e("div", { className: "weggs-pets-archive-header", children: /* @__PURE__ */ e("div", { className: "weggs-pets-container", children: /* @__PURE__ */ a("div", { className: "weggs-pets-author-card", children: [
       s ? /* @__PURE__ */ e("img", { className: "weggs-pets-author-avatar", src: s, alt: "", width: 80, height: 80 }) : /* @__PURE__ */ e("div", { className: "weggs-pets-author-initials", "aria-hidden": "true", children: l }),
       /* @__PURE__ */ a("div", { children: [
@@ -449,11 +475,11 @@ function D({ site: t, author: r, posts: n }) {
         r.bio && /* @__PURE__ */ e("p", { className: "weggs-pets-author-bio", children: r.bio })
       ] })
     ] }) }) }),
-    /* @__PURE__ */ e("div", { className: "weggs-pets-container weggs-pets-section", children: /* @__PURE__ */ e(v, { posts: n, site: t }) })
+    /* @__PURE__ */ e("div", { className: "weggs-pets-container weggs-pets-section", children: /* @__PURE__ */ e(u, { posts: n, site: t }) })
   ] });
 }
-function O({ site: t, message: r }) {
-  const n = m(t);
+function q({ site: t, message: r }) {
+  const n = h(t);
   return /* @__PURE__ */ a("div", { className: "weggs-pets-container weggs-pets-404", children: [
     /* @__PURE__ */ e("div", { className: "weggs-pets-404__num", "aria-hidden": "true", children: "404" }),
     /* @__PURE__ */ e("h2", { children: n("notFoundTitle") }),
@@ -469,33 +495,33 @@ const w = {
   heroTitle: "",
   heroSubtitle: "",
   accentColor: "#2563eb"
-}, q = {
+}, W = {
   heroImageUrl: { description: "URL of the full-width banner image on the home page (leave empty to use a gradient).", format: "URL" },
   heroTitle: { description: "Title displayed on the hero banner (default: site title)." },
   heroSubtitle: { description: "Subtitle / tagline displayed on the hero banner (default: site description)." },
   accentColor: { description: "Accent color for links, buttons and highlights.", format: "hex color" }
 }, _ = (t) => /^#[0-9a-f]{3,8}$/i.test(t) ? t : "#2563eb";
-function W(t, r) {
+function G(t, r) {
   const n = { ...w, ...r ?? {} };
   return n.accentColor === w.accentColor ? t : `${t}
 :root{--wp-blue:${_(n.accentColor)};--wp-blue-hover:color-mix(in srgb,${_(n.accentColor)} 80%,#000)}
 `;
 }
-function G({ config: t, save: r }) {
-  const { t: n } = I("theme-weggs-pets"), [s, l] = y({ ...w, ...t }), [i, p] = y(!1);
+function V({ config: t, save: r }) {
+  const { t: n } = I("theme-weggs-pets"), [s, l] = y({ ...w, ...t }), [i, m] = y(!1);
   L(() => l({ ...w, ...t }), [t]);
   function g(o, d) {
-    l((h) => ({ ...h, [o]: d }));
+    l((c) => ({ ...c, [o]: d }));
   }
-  async function c(o) {
-    o.preventDefault(), p(!0);
+  async function p(o) {
+    o.preventDefault(), m(!0);
     try {
       await r(s), z.success(n("settings.saved"));
     } finally {
-      p(!1);
+      m(!1);
     }
   }
-  return /* @__PURE__ */ a("form", { onSubmit: c, "data-form-type": "other", className: "max-w-xl space-y-4", children: [
+  return /* @__PURE__ */ a("form", { onSubmit: p, "data-form-type": "other", className: "max-w-xl space-y-4", children: [
     /* @__PURE__ */ e("h1", { className: "text-xl font-semibold", children: n("settings.title") }),
     /* @__PURE__ */ a("div", { className: "space-y-1", children: [
       /* @__PURE__ */ e("label", { className: "label", htmlFor: "wp-hero-url", children: n("settings.heroImageUrl") }),
@@ -627,7 +653,7 @@ const K = {
       saved: "Enregistré — CSS du thème mis à jour."
     }
   }
-}, Q = {
+}, X = {
   id: "weggs-pets",
   name: "Weggs Pets",
   version: "1.0.0",
@@ -652,18 +678,18 @@ const K = {
   },
   templates: {
     base: P,
-    home: B,
-    single: M,
-    category: $,
-    author: D,
-    notFound: O
+    home: M,
+    single: $,
+    category: D,
+    author: O,
+    notFound: q
   },
   // /theme-settings page; the saved config is baked into the uploaded CSS.
-  settings: { navLabelKey: "settings.navLabel", defaultConfig: w, component: G, schema: q },
-  compileCss: (t) => W(N, t),
+  settings: { navLabelKey: "settings.navLabel", defaultConfig: w, component: V, schema: W },
+  compileCss: (t) => G(N, t),
   // Translations, namespace "theme-weggs-pets" (admin UI + public labels).
   i18n: K
 };
 export {
-  Q as default
+  X as default
 };
