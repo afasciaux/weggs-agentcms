@@ -2,6 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="https://afasciaux.github.io/weggs-agentcms/sitemaps/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://afasciaux.github.io/weggs-agentcms/chats/le-maine-coon.html</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
     <loc>https://afasciaux.github.io/weggs-agentcms/chats/le-persan.html</loc>
     <lastmod>2026-10-29</lastmod>
   </url>
