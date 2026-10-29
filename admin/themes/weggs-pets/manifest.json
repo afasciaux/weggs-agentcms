@@ -1,0 +1,8 @@
+{
+  "id": "weggs-pets",
+  "name": "Weggs Pets",
+  "version": "1.0.0",
+  "apiVersion": "1.6.0",
+  "entry": "bundle.js",
+  "kind": "theme"
+}
