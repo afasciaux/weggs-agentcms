@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /weggs-agentcms/admin/
+
+Sitemap: https://afasciaux.github.io/weggs-agentcms/sitemaps/sitemap-index.xml
