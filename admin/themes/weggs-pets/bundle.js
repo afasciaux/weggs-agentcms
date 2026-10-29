@@ -151,8 +151,8 @@ body.weggs-pets {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .weggs-pets-nav { display: none; }
-  .weggs-pets-nav.weggs-pets-nav--open { display: block; width: 100%; order: 3; }
-  .weggs-pets-nav.weggs-pets-nav--open ul { flex-direction: column; gap: .25rem; padding: .5rem 0 .75rem; }
+  .weggs-pets-nav.is-open { display: block; width: 100%; order: 3; }
+  .weggs-pets-nav.is-open ul { flex-direction: column; gap: .25rem; padding: .5rem 0 .75rem; }
   .weggs-pets-burger { display: flex; }
   .weggs-pets-header__inner { flex-wrap: wrap; height: auto; padding: .75rem 1.5rem; }
   .weggs-pets-hero-banner { min-height: 360px; }
