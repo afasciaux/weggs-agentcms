@@ -1,5 +1,5 @@
 import { jsx as e, jsxs as a, Fragment as u } from "react/jsx-runtime";
-import { i18n as S, pickPublicLocale as k, canonicalUrl as T, pickFormat as f, postSortMillis as C, buildTermUrl as E, toast as z } from "@agent-cms/runtime";
+import { i18n as k, pickPublicLocale as S, canonicalUrl as T, pickFormat as f, postSortMillis as C, buildTermUrl as E, toast as z } from "@agent-cms/runtime";
 import { useState as y, useEffect as L } from "react";
 import { useTranslation as I } from "react-i18next";
 const N = `@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
@@ -43,7 +43,7 @@ body.weggs-pets {
 /* HEADER */
 .weggs-pets-header { position: sticky; top: 0; z-index: 100; background: var(--wp-navy); box-shadow: 0 2px 16px rgba(0,0,0,.25); }
 .weggs-pets-header__inner { display: flex; align-items: center; gap: 1rem; height: var(--wp-header-h); }
-.weggs-pets-brand { color: var(--wp-white); font-weight: 800; font-size: 1.2rem; text-decoration: none; white-space: nowrap; flex-shrink: 0; letter-spacing: -.02em; display: flex; align-items: center; gap: .625rem; }
+.weggs-pets-brand { color: var(--wp-white); font-weight: 800; font-size: 1.2rem; line-height: 1; text-decoration: none; white-space: nowrap; flex-shrink: 0; letter-spacing: -.02em; display: flex; align-items: center; gap: .625rem; }
 .weggs-pets-brand:hover { color: var(--wp-blue-light); }
 .weggs-pets-nav { flex: 1; }
 .weggs-pets-nav ul { display: flex; list-style: none; gap: .25rem; align-items: center; }
@@ -248,7 +248,7 @@ npm run serve     # serve the demo site on http://localhost:4321/
 Bump \`version\` in \`manifest.json\`, \`src/manifest.tsx\` and \`package.json\` for each release: installing a newer ZIP upgrades the theme in place.
 `;
 function m(t, r) {
-  const n = S.getFixedT(k(r || t.settings.language || "en"), "theme-weggs-pets");
+  const n = k.getFixedT(S(r || t.settings.language || "en"), "theme-weggs-pets");
   return (s) => n(`public.${s}`);
 }
 function b({ items: t, currentPath: r }) {
@@ -261,29 +261,35 @@ function b({ items: t, currentPath: r }) {
   }) });
 }
 function F() {
-  return /* @__PURE__ */ a("svg", { width: "38", height: "38", viewBox: "0 0 38 38", fill: "none", "aria-hidden": "true", style: { flexShrink: 0 }, children: [
-    /* @__PURE__ */ e("circle", { cx: "19", cy: "19", r: "19", fill: "rgba(255,255,255,0.12)" }),
-    /* @__PURE__ */ a("g", { transform: "translate(4, 8)", children: [
-      /* @__PURE__ */ e("ellipse", { cx: "8", cy: "14", rx: "6", ry: "5", fill: "#fff", opacity: ".95" }),
-      /* @__PURE__ */ e("ellipse", { cx: "3.5", cy: "10", rx: "2.5", ry: "4", fill: "#fff", opacity: ".8", transform: "rotate(-15 3.5 10)" }),
-      /* @__PURE__ */ e("ellipse", { cx: "12.5", cy: "10", rx: "2.5", ry: "4", fill: "#fff", opacity: ".8", transform: "rotate(15 12.5 10)" }),
-      /* @__PURE__ */ e("ellipse", { cx: "8", cy: "16", rx: "3", ry: "2", fill: "#fff", opacity: ".7" }),
-      /* @__PURE__ */ e("ellipse", { cx: "8", cy: "15", rx: "1.2", ry: ".8", fill: "#0d1b3e" }),
-      /* @__PURE__ */ e("circle", { cx: "5.5", cy: "12.5", r: "1", fill: "#0d1b3e" }),
-      /* @__PURE__ */ e("circle", { cx: "10.5", cy: "12.5", r: "1", fill: "#0d1b3e" })
-    ] }),
-    /* @__PURE__ */ a("g", { transform: "translate(20, 8)", children: [
-      /* @__PURE__ */ e("ellipse", { cx: "8", cy: "14", rx: "6", ry: "5", fill: "#bfdbfe", opacity: ".95" }),
-      /* @__PURE__ */ e("polygon", { points: "2,11 4,4 7,10", fill: "#bfdbfe", opacity: ".9" }),
-      /* @__PURE__ */ e("polygon", { points: "14,11 12,4 9,10", fill: "#bfdbfe", opacity: ".9" }),
-      /* @__PURE__ */ e("polygon", { points: "3,10 4.5,6 6.5,10", fill: "#93c5fd", opacity: ".7" }),
-      /* @__PURE__ */ e("polygon", { points: "13,10 11.5,6 9.5,10", fill: "#93c5fd", opacity: ".7" }),
-      /* @__PURE__ */ e("ellipse", { cx: "8", cy: "16", rx: "3", ry: "1.8", fill: "#bfdbfe", opacity: ".7" }),
-      /* @__PURE__ */ e("polygon", { points: "8,14.5 6.8,15.5 9.2,15.5", fill: "#0d1b3e" }),
-      /* @__PURE__ */ e("ellipse", { cx: "5.5", cy: "12.5", rx: ".8", ry: "1.1", fill: "#0d1b3e" }),
-      /* @__PURE__ */ e("ellipse", { cx: "10.5", cy: "12.5", rx: ".8", ry: "1.1", fill: "#0d1b3e" })
-    ] })
-  ] });
+  return /* @__PURE__ */ a(
+    "svg",
+    {
+      width: "48",
+      height: "24",
+      viewBox: "0 0 48 24",
+      fill: "none",
+      "aria-hidden": "true",
+      style: { display: "block", flexShrink: 0 },
+      children: [
+        /* @__PURE__ */ e("ellipse", { cx: "5", cy: "10", rx: "3.5", ry: "5", fill: "white", opacity: ".9", transform: "rotate(-10 5 10)" }),
+        /* @__PURE__ */ e("ellipse", { cx: "17", cy: "10", rx: "3.5", ry: "5", fill: "white", opacity: ".9", transform: "rotate(10 17 10)" }),
+        /* @__PURE__ */ e("ellipse", { cx: "11", cy: "13", rx: "8", ry: "7", fill: "white" }),
+        /* @__PURE__ */ e("ellipse", { cx: "11", cy: "17", rx: "4", ry: "2.8", fill: "white", opacity: ".75" }),
+        /* @__PURE__ */ e("ellipse", { cx: "11", cy: "15.5", rx: "1.8", ry: "1.2", fill: "#0d1b3e" }),
+        /* @__PURE__ */ e("circle", { cx: "7.5", cy: "11.5", r: "1.3", fill: "#0d1b3e" }),
+        /* @__PURE__ */ e("circle", { cx: "14.5", cy: "11.5", r: "1.3", fill: "#0d1b3e" }),
+        /* @__PURE__ */ e("polygon", { points: "29,13 31.5,5 35,12", fill: "#bfdbfe" }),
+        /* @__PURE__ */ e("polygon", { points: "43,13 40.5,5 37,12", fill: "#bfdbfe" }),
+        /* @__PURE__ */ e("polygon", { points: "30,12 31.5,7 34,12", fill: "#93c5fd", opacity: ".7" }),
+        /* @__PURE__ */ e("polygon", { points: "42,12 40.5,7 38,12", fill: "#93c5fd", opacity: ".7" }),
+        /* @__PURE__ */ e("ellipse", { cx: "37", cy: "15", rx: "8", ry: "7", fill: "#bfdbfe" }),
+        /* @__PURE__ */ e("ellipse", { cx: "37", cy: "18.5", rx: "3.5", ry: "2.2", fill: "#bfdbfe", opacity: ".6" }),
+        /* @__PURE__ */ e("polygon", { points: "37,16.5 35.5,18 38.5,18", fill: "#0d1b3e" }),
+        /* @__PURE__ */ e("ellipse", { cx: "33.5", cy: "13.5", rx: "1", ry: "1.5", fill: "#0d1b3e" }),
+        /* @__PURE__ */ e("ellipse", { cx: "40.5", cy: "13.5", rx: "1", ry: "1.5", fill: "#0d1b3e" })
+      ]
+    }
+  );
 }
 function U({ site: t, currentPath: r, locale: n }) {
   var i;
