@@ -43,7 +43,9 @@ body.weggs-pets {
 /* HEADER */
 .weggs-pets-header { position: sticky; top: 0; z-index: 100; background: var(--wp-navy); box-shadow: 0 2px 16px rgba(0,0,0,.25); }
 .weggs-pets-header__inner { display: flex; align-items: center; gap: 1rem; height: var(--wp-header-h); }
-.weggs-pets-brand { color: var(--wp-white); font-weight: 800; font-size: 1.2rem; line-height: 1; text-decoration: none; white-space: nowrap; flex-shrink: 0; letter-spacing: -.02em; display: flex; align-items: center; gap: .625rem; }
+.weggs-pets-brand { color: var(--wp-white); font-weight: 800; font-size: 1.2rem; text-decoration: none; flex-shrink: 0; letter-spacing: -.02em; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; gap: .625rem; }
+.weggs-pets-brand svg { display: block; flex-shrink: 0; }
+.weggs-pets-brand__text { white-space: nowrap; line-height: 1; }
 .weggs-pets-brand:hover { color: var(--wp-blue-light); }
 .weggs-pets-nav { flex: 1; }
 .weggs-pets-nav ul { display: flex; list-style: none; gap: .25rem; align-items: center; }
@@ -297,7 +299,7 @@ function U({ site: t, currentPath: r, locale: n }) {
   return /* @__PURE__ */ e("header", { className: "weggs-pets-header", children: /* @__PURE__ */ a("div", { className: "weggs-pets-container weggs-pets-header__inner", children: [
     /* @__PURE__ */ a("a", { className: "weggs-pets-brand", href: t.homePath ?? "/index.html", children: [
       /* @__PURE__ */ e(F, {}),
-      t.settings.title
+      /* @__PURE__ */ e("span", { className: "weggs-pets-brand__text", children: t.settings.title })
     ] }),
     /* @__PURE__ */ a("button", { className: "weggs-pets-burger", type: "button", "aria-expanded": "false", "aria-controls": "weggs-pets-nav", "data-weggs-pets-burger": !0, children: [
       /* @__PURE__ */ e("span", { className: "weggs-pets-sr-only", children: s("menu") }),
