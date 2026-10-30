@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://afasciaux.github.io/weggs-agentcms/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ménagerie Fleox</title>
+    <link>https://afasciaux.github.io/weggs-agentcms/</link>
+    <description>Ménagerie Fleox</description>
+    <language>fr</language>
+    <lastBuildDate>Fri, 30 Oct 2026 09:24:22 GMT</lastBuildDate>
+    <atom:link href="https://afasciaux.github.io/weggs-agentcms/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>La Perruche Calopsitte</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/oiseaux/la-perruche-calopsitte-2.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/oiseaux/la-perruche-calopsitte-2.html</guid>
+      <category>Oiseaux</category>
+      <description><![CDATA[Douce, facile à apprivoiser et très attachante, la Calopsitte est la perruche idéale pour débuter.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:21:19 GMT</pubDate>
+    </item>
+    <item>
+      <title>Le Cacatoès Blanc</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/oiseaux/le-cacatoes-blanc.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/oiseaux/le-cacatoes-blanc.html</guid>
+      <category>Oiseaux</category>
+      <description><![CDATA[Majestueux et expressif, le Cacatoès blanc est un oiseau d'exception qui demande un engagement total.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:20:50 GMT</pubDate>
+    </item>
+    <item>
+      <title>Le Diamant Mandarin</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/oiseaux/le-diamant-mandarin.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/oiseaux/le-diamant-mandarin.html</guid>
+      <category>Oiseaux</category>
+      <description><![CDATA[Minuscule et coloré, le Diamant Mandarin est l'oiseau de compagnie le plus populaire après le canari.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:20:24 GMT</pubDate>
+    </item>
+    <item>
+      <title>Le Canari</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/oiseaux/le-canari.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/oiseaux/le-canari.html</guid>
+      <category>Oiseaux</category>
+      <description><![CDATA[Chantre inégalé du foyer, le Canari séduit par son chant mélodieux et son entretien simple.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:19:59 GMT</pubDate>
+    </item>
+    <item>
+      <title>Le Perroquet Ara</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/oiseaux/le-perroquet-ara.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/oiseaux/le-perroquet-ara.html</guid>
+      <category>Oiseaux</category>
+      <description><![CDATA[Coloré, intelligent et très expressif, l'Ara est l'un des perroquets les plus spectaculaires au monde.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:19:33 GMT</pubDate>
+    </item>
+    <item>
+      <title>La Perruche Calopsitte</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/oiseaux/la-perruche-calopsitte.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/oiseaux/la-perruche-calopsitte.html</guid>
+      <category>Oiseaux</category>
+      <description><![CDATA[Douce, facile à apprivoiser et très attachante, la Calopsitte est la perruche idéale pour débuter.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:18:57 GMT</pubDate>
+    </item>
+    <item>
+      <title>Le Caniche</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chiens/le-caniche.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chiens/le-caniche.html</guid>
+      <category>Chiens</category>
+      <description><![CDATA[Intelligent, élégant et hypoallergénique, le Caniche est bien plus qu'un chien de salon.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:05:30 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/race-caniche-final-c5c036/large.webp" length="88058" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Husky Sibérien</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chiens/le-husky-siberien.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chiens/le-husky-siberien.html</guid>
+      <category>Chiens</category>
+      <description><![CDATA[Endurant, libre et magnifique, le Husky est un chien de traîneau devenu star des réseaux sociaux.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:04:55 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/race-husky2-e84b5d/large.webp" length="63346" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Bengale</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chats/le-bengale.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chats/le-bengale.html</guid>
+      <category>Chats</category>
+      <description><![CDATA[Athlétique, sauvage dans son apparence et fascinant, le Bengale est le léopard de l'appartement.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:04:29 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/race-bengale-30063f/large.webp" length="85324" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Bouledogue Français</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chiens/le-bouledogue-francais.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chiens/le-bouledogue-francais.html</guid>
+      <category>Chiens</category>
+      <description><![CDATA[Compact, expressif et plein de caractère, le Bouledogue Français conquiert toutes les villes.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:03:53 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/race-bouledogue-047617/large.webp" length="47404" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Golden Retriever</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chiens/le-golden-retriever.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chiens/le-golden-retriever.html</guid>
+      <category>Chiens</category>
+      <description><![CDATA[Joyeux, doux et toujours souriant, le Golden est l'un des chiens de famille les plus aimés au monde.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:03:26 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/celine-sayuri-tagami-2s6orajy6gi-unsplash-f35e6b/large.webp" length="102188" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le British Shorthair</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chats/le-british-shorthair.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chats/le-british-shorthair.html</guid>
+      <category>Chats</category>
+      <description><![CDATA[Rond, calme et indépendant, le British Shorthair est un chat d'appartement au caractère en or.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:02:59 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/race-british-shorthair-ac1b35/large.webp" length="42844" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Siamois</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chats/le-siamois.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chats/le-siamois.html</guid>
+      <category>Chats</category>
+      <description><![CDATA[Bavard, vif et très attaché à son maître, le Siamois ne laisse personne indifférent.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:02:32 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/meina-yin-fsjuadtsfhk-unsplash-758efc/large.webp" length="69664" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Berger Allemand</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chiens/le-berger-allemand.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chiens/le-berger-allemand.html</guid>
+      <category>Chiens</category>
+      <description><![CDATA[Intelligent, courageux et polyvalent, le Berger Allemand est l'un des chiens les plus utilisés dans le monde.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:01:58 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/race-berger-allemand-07d8f3/large.webp" length="83894" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Labrador Retriever</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chiens/le-labrador-retriever.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chiens/le-labrador-retriever.html</guid>
+      <category>Chiens</category>
+      <description><![CDATA[Doux, loyal et toujours prêt à jouer, le Labrador est le chien de famille par excellence.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:01:29 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/samuel-thompson-o6uzdpfh36g-unsplash-a4a032/large.webp" length="143092" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Maine Coon</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chats/le-maine-coon.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chats/le-maine-coon.html</guid>
+      <category>Chats</category>
+      <description><![CDATA[Grand, sociable et joueur, le Maine Coon est le gentle giant du monde félin.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:01:03 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/daniel-zopf-iqsbpwp-pyw-unsplash-6338cb/large.webp" length="117756" type="image/webp"/>
+    </item>
+    <item>
+      <title>Le Persan</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/chats/le-persan.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/chats/le-persan.html</guid>
+      <category>Chats</category>
+      <description><![CDATA[Calme et affectueux, le Persan est le roi des chats d'appartement.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:00:36 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/race-persan-221076/large.webp" length="127050" type="image/webp"/>
+    </item>
+    <item>
+      <title>Les races de chats : guide complet</title>
+      <link>https://afasciaux.github.io/weggs-agentcms/les-races-de-chats-guide-complet.html</link>
+      <guid isPermaLink="true">https://afasciaux.github.io/weggs-agentcms/les-races-de-chats-guide-complet.html</guid>
+      <description><![CDATA[Tour d'horizon des principales races de chats, de leurs caractères et de leurs besoins.]]></description>
+      <pubDate>Thu, 29 Oct 2026 20:55:35 GMT</pubDate>
+      <enclosure url="https://afasciaux.github.io/weggs-agentcms/media/2026/10/chien-chat-banner-5cc58e/large.webp" length="167744" type="image/webp"/>
+    </item>
+  </channel>
+</rss>
