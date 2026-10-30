@@ -75,6 +75,10 @@ body.weggs-pets {
 .weggs-pets-section-all a { color: var(--wp-blue); font-size: .9rem; font-weight: 600; text-decoration: none; }
 .weggs-pets-section-all a:hover { text-decoration: underline; }
 
+/* SLIDER BASE (buttons hidden — shown by weggs-slider plugin CSS) */
+.weggs-slider { position: relative; }
+.weggs-slider__btn { display: none; }
+
 /* CARDS GRID */
 .weggs-pets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.75rem; }
 .weggs-pets-card { background: var(--wp-white); border-radius: var(--wp-radius); box-shadow: var(--wp-shadow); overflow: hidden; transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; }
