@@ -1,0 +1,8 @@
+{
+  "id": "weggs-slider",
+  "name": "Weggs Slider",
+  "version": "1.0.0",
+  "apiVersion": "1.6.0",
+  "entry": "bundle.js",
+  "kind": "plugin"
+}
